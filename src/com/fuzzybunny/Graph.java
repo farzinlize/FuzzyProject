@@ -13,6 +13,10 @@ public class Graph{
 		this.nodes = nodes;
 	}
 	
+	public Node findNode(int number){
+		return nodes.get(number);
+	}
+	
 	public Node findNode(String name){
 		for(Node n:nodes){
 			if(n.name.equals(name))

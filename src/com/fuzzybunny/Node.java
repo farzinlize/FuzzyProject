@@ -1,24 +1,24 @@
 package com.fuzzybunny;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
-public class Node{
+public class Node {
 	private boolean onStack;
 	private boolean defined;
 	private int index;
   	private int lowlink;
   	private ArrayList<Edge> outEdges;
-  	private HashMap<Node, Integer> distances;
   	public String name;
+  	public int number;
   	
-  	public Node(String name){
+  	public Node(String name, int num){
   		this.onStack = false;
   		this.defined = false;
   		this.index = 0;
   		this.lowlink =0;
   		this.name = name;
   		this.outEdges = new ArrayList<>();
+  		this.number = num;
   	}
   	
   	public ArrayList<Node> allNeighbours(){
