@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Main {
 	
 	public static void main(String[] arg){
-		File file = new File("DataSet\\Sample\\input.txt");
+		File file = new File("DataSet\\Large-1\\input.txt");
 		try {
 			FileInputStream fin = new FileInputStream(file);
 			InputReader in = new InputReader(fin);
@@ -27,15 +27,13 @@ public class Main {
 				Node dest = g.findNode(destName);
 				source.addEdge(dest, edgeWeight);
 			}
-//			ArrayList<ArrayList<Node>> result = Algorithems.runTarjan(g);
-//			System.out.println("Algo Done");
-//			int i=1;
-//			for(ArrayList<Node> compo: result){
-//				System.out.println(i++);
-//				for(Node n:compo){
-//					System.out.println(n.name);
-//				}
-//			}
+			ArrayList<ArrayList<Node>> result = Algorithems.runTarjan(g);
+			for(ArrayList<Node> compo: result){
+				for(Node n:compo){
+					System.out.println(n.name);
+				}
+				System.out.println("---");
+			}
 		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found");
 		} 

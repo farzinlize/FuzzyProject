@@ -27,6 +27,7 @@ public class Algorithems{
     private void doIt(Node v){
     	v.setIndex(index);
     	v.setLowlink(index);
+    	v.setDefined(true);
     	index++;
     	s.push(v);
     	v.setOnStack(true);

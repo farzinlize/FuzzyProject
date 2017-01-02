@@ -1,6 +1,7 @@
 package com.fuzzybunny;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Node{
 	private boolean onStack;
@@ -8,6 +9,7 @@ public class Node{
 	private int index;
   	private int lowlink;
   	private ArrayList<Edge> outEdges;
+  	private HashMap<Node, Integer> distances;
   	public String name;
   	
   	public Node(String name){
@@ -33,6 +35,9 @@ public class Node{
   	
   	public boolean isDefined(){
   		return this.defined;
+  	}
+  	public void setDefined(boolean state){
+  		this.defined = state;
   	}
   	public int getIndex() {
   		return index;
