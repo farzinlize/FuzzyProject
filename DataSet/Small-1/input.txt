@@ -1,0 +1,77 @@
+12 29
+ukj
+gjc
+wrd
+rla
+trm
+kjs
+lna
+nkz
+ity
+xun
+pxp
+pji
+gjc ity 58
+ity kjs 16
+kjs lna 83
+lna gjc 34
+kjs gjc 80
+lna gjc 24
+kjs gjc 35
+gjc kjs 26
+nkz pji 15
+pji pxp 31
+pxp rla 84
+rla nkz 31
+pji rla 56
+pji rla 49
+pji pxp 35
+pji nkz 79
+nkz pji 91
+trm ukj 86
+ukj wrd 38
+wrd xun 57
+xun trm 23
+xun wrd 87
+gjc trm 90
+wrd rla 84
+ity xun 7
+lna trm 98
+trm pxp 44
+lna trm 41
+trm nkz 34
+31
+pxp rla
+ukj rla
+trm wrd
+wrd pxp
+wrd kjs
+gjc ukj
+ukj wrd
+pji rla
+ity nkz
+ukj ukj
+trm gjc
+ukj kjs
+rla pji
+ukj xun
+trm nkz
+kjs kjs
+rla ity
+rla trm
+kjs kjs
+kjs lna
+lna kjs
+gjc lna
+gjc nkz
+nkz gjc
+pxp rla
+kjs wrd
+wrd wrd
+lna ity
+ity wrd
+pji trm
+rla pxp
+ity 214
+pji 555
+ukj 742

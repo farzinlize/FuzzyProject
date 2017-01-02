@@ -1,0 +1,412 @@
+100 160
+vdv
+mjg
+smp
+zty
+zsy
+nxu
+voj
+vhz
+hlf
+sjx
+gvd
+rhh
+vws
+nqq
+aeb
+hbj
+lnv
+yly
+fdw
+rlr
+ulh
+yhh
+asu
+juh
+hol
+kbt
+pib
+ksc
+rqh
+cww
+ucj
+stc
+ogc
+vvx
+fkr
+ejc
+dol
+wwy
+jrm
+wkc
+all
+brt
+vqw
+dna
+ibp
+ixi
+tvr
+bec
+edr
+qyr
+lxj
+fop
+ced
+qea
+ogm
+drm
+bml
+hma
+gbk
+hwg
+akl
+svf
+lxn
+cuj
+sja
+qtj
+gcs
+vch
+ult
+qos
+ykn
+qkc
+dny
+kjy
+bnx
+gyi
+hku
+oli
+dod
+tsm
+ijx
+xft
+ihj
+orz
+fjz
+urc
+zzj
+rat
+grh
+cgk
+jee
+fsq
+wew
+ahd
+gnj
+ghq
+fgr
+qyv
+syp
+gey
+aeb ahd 66
+ahd akl 62
+akl all 63
+all asu 56
+asu bec 21
+bec bml 50
+bml bnx 10
+bnx brt 51
+brt ced 26
+ced aeb 2
+bec aeb 88
+ced brt 61
+cgk cuj 90
+cuj cww 70
+cww dna 65
+dna dny 73
+dny dod 76
+dod dol 4
+dol drm 26
+drm edr 42
+edr ejc 57
+ejc cgk 41
+cuj dna 51
+cww dol 40
+dny dol 20
+dny drm 42
+dod dol 83
+fdw fgr 58
+fgr fjz 29
+fjz fkr 2
+fkr fop 60
+fop fsq 24
+fsq gbk 38
+gbk gcs 31
+gcs gey 29
+gey ghq 13
+ghq fdw 33
+fdw gcs 87
+gbk gey 94
+gcs gbk 48
+fop gcs 71
+fgr fkr 39
+fjz gcs 91
+fkr fgr 98
+fdw fjz 96
+gnj grh 66
+grh gvd 68
+gvd gyi 31
+gyi hbj 20
+hbj hku 51
+hku hlf 47
+hlf hma 27
+hma hol 81
+hol hwg 86
+hwg gnj 10
+hol hwg 83
+hlf gvd 74
+hku hlf 82
+hbj gnj 70
+hol gyi 60
+hol gvd 100
+hku hol 31
+gyi hma 20
+ibp ihj 94
+ihj ijx 71
+ijx ixi 30
+ixi jee 95
+jee jrm 68
+jrm juh 31
+juh kbt 86
+kbt kjy 58
+kjy ksc 27
+ksc ibp 87
+ixi ihj 12
+lnv lxj 16
+lxj lxn 84
+lxn mjg 61
+mjg nqq 66
+nqq nxu 2
+nxu ogc 75
+ogc ogm 84
+ogm oli 43
+oli orz 71
+orz lnv 22
+ogc nxu 67
+lxn lnv 30
+pib qea 17
+qea qkc 37
+qkc qos 26
+qos qtj 65
+qtj qyr 39
+qyr qyv 55
+qyv rat 6
+rat rhh 64
+rhh rlr 82
+rlr pib 65
+qea qyr 20
+qyv qyr 51
+rhh qyr 44
+pib qkc 25
+qyr qkc 62
+rhh qkc 100
+pib qyv 43
+pib qea 2
+qkc rhh 58
+qea qtj 56
+rlr rhh 82
+rqh sja 14
+sja sjx 95
+sjx smp 11
+smp stc 70
+stc svf 52
+svf syp 76
+syp tsm 82
+tsm tvr 83
+tvr ucj 7
+ucj rqh 38
+sjx syp 96
+ulh ult 33
+ult urc 46
+urc vch 97
+vch vdv 88
+vdv vhz 25
+vhz voj 98
+voj vqw 48
+vqw vvx 67
+vvx vws 18
+vws ulh 37
+vws voj 78
+vch vws 9
+vvx vdv 89
+vws vhz 4
+vqw vdv 60
+wew wkc 52
+wkc wwy 28
+wwy xft 51
+xft yhh 39
+yhh ykn 64
+ykn yly 38
+yly zsy 64
+zsy zty 20
+zty zzj 48
+zzj wew 16
+wew wwy 45
+zty yly 10
+xft zzj 61
+wwy zsy 58
+zzj zty 42
+wew yhh 3
+zty zsy 45
+xft wkc 29
+ijx lxj 90
+lnv qos 47
+rat wkc 3
+yly grh 56
+hlf dna 89
+dod ced 78
+aeb gey 5
+fdw tsm 84
+rqh voj 42
+140
+dny gyi
+gvd all
+dny vqw
+juh fop
+lxn lxj
+edr ahd
+ejc vvx
+ghq qkc
+ult gcs
+gbk smp
+qea bec
+vch vws
+hwg grh
+vch dod
+ibp grh
+all dna
+ghq ijx
+rlr orz
+fdw vws
+voj orz
+akl cgk
+ijx dod
+syp fgr
+fdw dna
+nqq nxu
+zzj nqq
+vvx xft
+drm juh
+qea xft
+all qos
+vhz gey
+hku bnx
+cgk tsm
+tvr qos
+vws hlf
+fjz yly
+ogc dna
+mjg vws
+ulh wkc
+ucj vhz
+juh oli
+kbt rlr
+vqw ucj
+sjx rqh
+ced jrm
+gvd sjx
+cww fgr
+jee ksc
+bec hbj
+smp hku
+lxj fop
+kbt gey
+zsy mjg
+nqq vch
+hwg vhz
+juh sjx
+rlr qkc
+lxn jrm
+sja urc
+vch dny
+vvx rhh
+vhz rqh
+all brt
+ulh ogc
+ulh cgk
+bml qos
+nxu dol
+ult vdv
+smp vqw
+oli qtj
+cgk orz
+qea wew
+rlr vch
+dny rhh
+kbt tsm
+vch wew
+stc wkc
+fjz vhz
+fdw bnx
+rhh hbj
+wew svf
+hma qyv
+ksc vdv
+drm wew
+dod vch
+qos dna
+hma akl
+fop ogc
+fkr zsy
+fjz ghq
+vch orz
+zzj gnj
+tvr drm
+oli bnx
+rlr dny
+dna fkr
+all aeb
+rhh ogm
+tsm fop
+rqh hbj
+gyi zsy
+yhh cgk
+akl wwy
+fop kjy
+all gyi
+tvr grh
+bnx nqq
+vch edr
+ykn gvd
+sjx sjx
+sjx fsq
+dol orz
+gey ced
+dna fdw
+fkr hlf
+vdv nxu
+mjg dol
+edr wkc
+vdv drm
+fop grh
+voj vch
+gnj ijx
+hlf drm
+fgr ahd
+akl yhh
+gnj kjy
+gcs ogm
+kjy yly
+wwy hku
+fgr bec
+dod ksc
+fsq stc
+wew dol
+hol dod
+stc kbt
+akl orz
+hwg yhh
+bec jrm
+tsm qkc
+drm rqh
+all 698
+dol 82
+fkr 540
+hma 337
+jrm 316
+nqq 665
+qtj 851
+svf 105
+ult 213
+xft 482

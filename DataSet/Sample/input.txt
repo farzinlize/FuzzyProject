@@ -1,0 +1,23 @@
+6 9
+sina
+ali
+kamran
+yoones
+amir
+reza
+sina ali 12
+ali sina 10
+kamran yoones 8
+yoones kamran 5
+amir reza 10
+reza amir 4
+sina yoones 7
+kamran amir 4
+ali reza 5
+3
+reza ali
+sina amir
+ali amir
+ali 10
+kamran 20
+reza 30

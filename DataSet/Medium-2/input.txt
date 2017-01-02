@@ -1,0 +1,440 @@
+100 189
+yxq
+zfb
+yor
+oje
+mrq
+jbw
+txj
+unn
+wfy
+jmd
+dyr
+muf
+gqu
+hli
+saw
+ziy
+jki
+bkw
+ghd
+ibg
+uxp
+eqi
+gfn
+rwk
+wac
+ygh
+sno
+eux
+egc
+fuf
+jvt
+cyc
+mpr
+zlb
+lco
+naw
+rie
+dxu
+hrg
+iqn
+hdg
+niv
+saz
+kvk
+jnf
+hhb
+vxr
+gci
+fti
+qdl
+zjf
+zjl
+nky
+srz
+ufe
+bir
+htw
+qcp
+riy
+aqf
+xze
+ksp
+lru
+ltc
+mtr
+cde
+lwx
+xfk
+kyo
+tvm
+ufg
+odr
+eii
+cob
+nen
+bln
+cen
+aep
+twi
+qlf
+wai
+ldq
+ifq
+led
+aml
+oer
+lpq
+pkv
+rhl
+hws
+kim
+rfs
+xjl
+yfg
+vpq
+wnn
+cju
+cvm
+prk
+afc
+aep afc 71
+afc aml 4
+aml aqf 70
+aqf bir 50
+bir bkw 8
+bkw bln 33
+bln cde 21
+cde cen 43
+cen cju 60
+cju aep 88
+bir bkw 26
+aml aqf 60
+cen aep 30
+aml aqf 89
+aqf aml 98
+cob cvm 8
+cvm cyc 54
+cyc dxu 95
+dxu dyr 9
+dyr egc 95
+egc eii 52
+eii eqi 9
+eqi eux 53
+eux fti 3
+fti cob 90
+dxu eii 73
+egc cob 22
+cob dyr 33
+eqi dxu 93
+dxu cob 85
+cvm eqi 89
+cob fti 80
+eux eii 31
+cob egc 84
+fuf gci 63
+gci gfn 54
+gfn ghd 99
+ghd gqu 33
+gqu hdg 59
+hdg hhb 9
+hhb hli 12
+hli hrg 90
+hrg htw 40
+htw fuf 87
+fuf ghd 50
+gci hrg 43
+fuf hhb 88
+fuf htw 81
+hws ibg 1
+ibg ifq 88
+ifq iqn 96
+iqn jbw 4
+jbw jki 83
+jki jmd 89
+jmd jnf 17
+jnf jvt 37
+jvt kim 42
+kim hws 32
+iqn hws 50
+jvt jki 19
+jki jnf 19
+jnf ibg 68
+iqn jnf 2
+ibg jvt 98
+jbw jmd 45
+jvt hws 28
+kim jbw 52
+jvt jki 3
+jbw hws 4
+jbw hws 42
+hws jki 22
+jmd ifq 85
+ksp kvk 15
+kvk kyo 37
+kyo lco 16
+lco ldq 89
+ldq led 39
+led lpq 57
+lpq lru 37
+lru ltc 97
+ltc lwx 98
+lwx ksp 41
+led ldq 94
+ksp lco 34
+led ksp 13
+mpr mrq 53
+mrq mtr 17
+mtr muf 73
+muf naw 78
+naw nen 66
+nen niv 35
+niv nky 47
+nky odr 45
+odr oer 43
+oer mpr 62
+muf nen 55
+naw muf 7
+nky odr 33
+oer nen 58
+niv mrq 52
+naw oer 51
+oje pkv 96
+pkv prk 18
+prk qcp 2
+qcp qdl 93
+qdl qlf 15
+qlf rfs 61
+rfs rhl 34
+rhl rie 16
+rie riy 34
+riy oje 66
+prk pkv 17
+qdl qcp 25
+qcp prk 47
+rwk saw 20
+saw saz 60
+saz sno 8
+sno srz 27
+srz tvm 14
+tvm twi 22
+twi txj 89
+txj ufe 66
+ufe ufg 98
+ufg rwk 94
+ufe rwk 47
+saw tvm 40
+rwk twi 25
+twi sno 72
+srz saw 43
+unn uxp 17
+uxp vpq 59
+vpq vxr 29
+vxr wac 49
+wac wai 3
+wai wfy 26
+wfy wnn 53
+wnn xfk 66
+xfk xjl 23
+xjl unn 36
+unn xfk 29
+wnn wac 10
+vxr uxp 6
+vpq unn 97
+xfk wnn 61
+wai vpq 20
+vpq vxr 44
+wac wnn 46
+vpq unn 99
+xfk wnn 14
+wac wfy 62
+xjl xfk 72
+xze yfg 89
+yfg ygh 23
+ygh yor 4
+yor yxq 75
+yxq zfb 3
+zfb ziy 46
+ziy zjf 28
+zjf zjl 50
+zjl zlb 29
+zlb xze 41
+yxq zjf 78
+ygh xze 83
+yxq ziy 35
+yfg yxq 81
+yxq zfb 64
+ziy zfb 28
+cde zfb 18
+zlb led 15
+ksp vpq 9
+unn hrg 89
+hrg jnf 26
+hws rhl 64
+oje eii 5
+egc naw 26
+nen tvm 68
+aep cyc 17
+aep rie 90
+aep rhl 60
+naw saz 71
+lco nky 90
+htw jnf 78
+oje cob 91
+afc jmd 65
+vpq mtr 93
+cde twi 71
+zlb eqi 22
+ziy ifq 63
+yxq lru 37
+139
+egc zfb
+ksp vxr
+ldq gci
+fti saz
+naw cob
+rie zjl
+ldq ibg
+lru fuf
+yor ghd
+rwk qlf
+txj rie
+sno kyo
+lco tvm
+mrq mrq
+yxq zjf
+dxu ltc
+cyc jnf
+lco hrg
+jki bir
+eux muf
+yor jki
+zjf dyr
+egc fti
+kvk unn
+htw cob
+cju lru
+saz saz
+xjl zlb
+jbw ghd
+xjl fuf
+qdl ygh
+zjl gci
+kim ifq
+odr ibg
+yxq mtr
+jvt hrg
+eii jki
+ifq qcp
+tvm saw
+bln txj
+nen cju
+ifq zjl
+rwk rwk
+aqf hdg
+saz kvk
+ufg xjl
+eqi yfg
+kvk ibg
+hli ibg
+rie kim
+cvm wai
+rfs pkv
+lpq mtr
+eii bir
+bkw twi
+lpq ldq
+egc yfg
+mtr ksp
+tvm jki
+bln yfg
+dxu ygh
+aqf bir
+ltc rfs
+bln rwk
+afc jvt
+dxu dyr
+saz cyc
+aep xfk
+gci riy
+jki htw
+aqf nky
+eii cde
+hhb hdg
+saz cde
+odr wfy
+hws cob
+zlb cen
+eqi zfb
+mpr muf
+nen fti
+dxu egc
+cde xfk
+zjl oje
+jki cde
+ldq mpr
+ufe hhb
+htw mrq
+ygh mpr
+aep ibg
+kyo lwx
+lru aep
+qlf unn
+naw led
+jmd vxr
+rfs yfg
+mtr xjl
+saz yfg
+afc vxr
+hhb wnn
+odr hli
+kyo bir
+twi zlb
+wfy lpq
+yor jmd
+zfb gqu
+nen egc
+qdl qdl
+sno afc
+ufg kyo
+bir cyc
+ldq yxq
+dxu yor
+ibg hhb
+wac ygh
+fti vpq
+eii pkv
+qdl xfk
+ksp yfg
+kim zfb
+fuf yfg
+ldq jbw
+hdg muf
+hli jbw
+unn prk
+rwk srz
+wfy aqf
+aep zjf
+jki afc
+cju mrq
+qdl dyr
+ltc aep
+twi jnf
+rhl kvk
+qcp rfs
+zjf kvk
+egc jvt
+cen rhl
+jvt kyo
+saz qdl
+aml 341
+eqi 845
+gqu 640
+hws 83
+kvk 627
+naw 403
+qdl 847
+ufg 82
+wnn 625
+ygh 175

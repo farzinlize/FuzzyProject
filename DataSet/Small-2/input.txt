@@ -1,0 +1,64 @@
+12 21
+alu
+xky
+tdp
+shk
+iri
+pon
+ofi
+slu
+wnu
+lot
+wcw
+dae
+alu dae 71
+dae iri 68
+iri lot 86
+lot alu 9
+lot alu 47
+ofi pon 81
+pon shk 66
+shk slu 5
+slu ofi 64
+ofi pon 48
+tdp wcw 5
+wcw wnu 68
+wnu xky 36
+xky tdp 80
+wcw xky 17
+xky wcw 34
+wnu xky 41
+xky wnu 24
+shk wcw 18
+xky dae 18
+tdp alu 30
+26
+slu wnu
+shk alu
+xky ofi
+xky iri
+shk ofi
+slu pon
+tdp pon
+xky wcw
+ofi xky
+wcw slu
+dae dae
+pon slu
+lot pon
+ofi slu
+wnu tdp
+tdp shk
+wcw iri
+pon iri
+ofi iri
+dae dae
+wnu wnu
+xky pon
+ofi tdp
+ofi wnu
+dae shk
+ofi xky
+iri 92
+pon 380
+wnu 311
