@@ -7,6 +7,7 @@ public class Node{
 	private boolean defined;
 	private int index;
   	private int lowlink;
+  	private ArrayList<Edge> outEdges;
   	public String name;
   	
   	public Node(String name){
@@ -14,11 +15,22 @@ public class Node{
   		this.defined = false;
   		this.index = 0;
   		this.lowlink =0;
+  		this.name = name;
+  		this.outEdges = new ArrayList<>();
   	}
   	
   	public ArrayList<Node> allNeighbours(){
-  		return null;
+  		ArrayList<Node> out = new ArrayList<>();
+  		for(Edge e:outEdges){
+  			out.add(e.destination);
+  		}
+  		return out;
   	}
+  	
+  	public void addEdge(Node dest, int witgh){
+  		this.outEdges.add(new Edge(this, dest, witgh));
+  	}
+  	
   	public boolean isDefined(){
   		return this.defined;
   	}
