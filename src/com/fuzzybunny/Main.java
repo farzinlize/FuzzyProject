@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class Main {
 	
 	public static void main(String[] arg){
-		File file = new File("DataSet\\Sample\\input.txt");
+		File file = new File("DataSet\\Large-1\\input.txt");
 		try {
 			FileInputStream fin = new FileInputStream(file);
 			InputReader in = new InputReader(fin);
@@ -40,13 +40,20 @@ public class Main {
 			}
 			//end of tarjan
 			int queryAmount = in.nextInt();
-			InsertionList list = new InsertionList();
+			InsertionList<Query> list = new InsertionList();
+			ArrayList<Query> piorityList = new ArrayList<>();
 			for(int i=0;i<queryAmount;i++){
 				Node start = g.findNode(nodeMap.get(in.next()));
 				Node end = g.findNode(nodeMap.get(in.next()));
+				Query q = new Query(start, end, i);
+				list.addElement(q);
+				piorityList.add(q);				
 			}
+			//querys listed and sorted
 		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found");
+		} catch (Exception e) {
+			System.out.println("FUCK");
 		} 
 	}
 	

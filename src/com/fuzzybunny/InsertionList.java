@@ -10,6 +10,10 @@ public class InsertionList<T extends Element> {
 		this.list = new ArrayList<>();
 	}
 	
+	public T getElement(int index){
+		return list.get(index);
+	}
+	
 	public void addElement(T element){
 		boolean flag = false;
 		for(int i=0;i<list.size();i++){
@@ -23,6 +27,10 @@ public class InsertionList<T extends Element> {
 		if(!flag){
 			list.add(element);
 		}
+	}
+
+	public int size() {
+		return list.size();
 	}
 	
 }
