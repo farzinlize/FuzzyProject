@@ -11,11 +11,17 @@ public class InsertionList<T extends Element> {
 	}
 	
 	public void addElement(T element){
+		boolean flag = false;
 		for(int i=0;i<list.size();i++){
 			T current = list.get(i);
-			if(element.getIntValue()<current.getIntValue()){
+			if(element.getIntValue()<=current.getIntValue()){
 				list.add(i, element);
+				flag = true;
+				break ;
 			}
+		}
+		if(!flag){
+			list.add(element);
 		}
 	}
 	
