@@ -15,6 +15,14 @@ public class Query implements Element {
 		answered = false;
 	}
 	
+	public boolean checkTopology() throws Exception{
+		if(start.getTopologyID()>end.getTopologyID()){
+			this.makeAnswer(-1);
+			return true;	//no road
+		}
+		return false;		//can't know
+	}
+	
 	@Override
 	public int getIntValue() {
 		return start.number;

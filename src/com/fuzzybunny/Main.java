@@ -48,7 +48,8 @@ public class Main {
 				Node start = g.findNode(nodeMap.get(in.next()));
 				Node end = g.findNode(nodeMap.get(in.next()));
 				Query q = new Query(start, end, i);
-				list.addElement(q);
+				if(!q.checkTopology())
+					list.addElement(q);
 				piorityList.add(q);
 			}
 			//querys listed and sorted
