@@ -40,14 +40,14 @@ public class Main {
 			}
 			//end of tarjan
 			int queryAmount = in.nextInt();
-			InsertionList<Query> list = new InsertionList();
+			InsertionList<Query> list = new InsertionList<Query>();
 			ArrayList<Query> piorityList = new ArrayList<>();
 			for(int i=0;i<queryAmount;i++){
 				Node start = g.findNode(nodeMap.get(in.next()));
 				Node end = g.findNode(nodeMap.get(in.next()));
 				Query q = new Query(start, end, i);
 				list.addElement(q);
-				piorityList.add(q);				
+				piorityList.add(q);
 			}
 			//querys listed and sorted
 		} catch (FileNotFoundException e) {
