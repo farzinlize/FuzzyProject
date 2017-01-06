@@ -32,8 +32,10 @@ public class Main {
 			}
 			//Tarjan Run and Answer
 			ArrayList<ArrayList<Node>> result = Algorithems.runTarjan(g);
+			int topologyID=0;
 			for(ArrayList<Node> compo: result){
 				for(Node n:compo){
+					n.setTopologyID(topologyID++);
 					System.out.println(n.name);
 				}
 				System.out.println("---");

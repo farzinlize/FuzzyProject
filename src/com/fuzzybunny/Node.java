@@ -5,15 +5,18 @@ import java.util.ArrayList;
 public class Node {
 	private boolean onStack;
 	private boolean defined;
+	private boolean topologyed;
 	private int index;
   	private int lowlink;
   	private ArrayList<Edge> outEdges;
+  	private int topologyID;
   	public String name;
   	public int number;
   	
   	public Node(String name, int num){
   		this.onStack = false;
   		this.defined = false;
+  		this.topologyed = false;
   		this.index = 0;
   		this.lowlink =0;
   		this.name = name;
@@ -53,6 +56,16 @@ public class Node {
   	}
   	public boolean isOnStack() {
   		return onStack;
+  	}
+  	public int getTopologyID() throws Exception{
+  		if(topologyed)
+  			return topologyID;
+  		else
+  			throw new Exception("not topolyed yet. node: " + name);
+  	}
+  	public void setTopologyID(int ID){
+  		this.topologyID = ID;
+  		this.topologyed = true;
   	}
   	public void setOnStack(boolean onStack) {
   		this.onStack = onStack;
