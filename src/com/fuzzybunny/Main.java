@@ -26,11 +26,9 @@ public class Main {
 				g.addNode(new Node(nodeName, i));
 			}
 			for (int i = 0; i < edgesAmount; i++) {
-				String sourceName = in.next();
-				String destName = in.next();
+				Node source = g.findNode(nodeMap.get(in.next()));
+				Node dest = g.findNode(nodeMap.get(in.next()));
 				int edgeWeight = in.nextInt();
-				Node source = g.findNode(sourceName);
-				Node dest = g.findNode(destName);
 				source.addEdge(dest, edgeWeight);
 			}
 			// Tarjan Run and Answer
