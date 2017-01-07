@@ -35,19 +35,20 @@ public class Main {
 			}
 			// Tarjan Run and Answer
 			ArrayList<ArrayList<Node>> result = Algorithems.runTarjan(g);
-			int topologyID = 0;
+			int city = 0;
 			for (ArrayList<Node> compo : result) {
 				for (Node n : compo) {
-					n.setTopologyID(topologyID++);
+					n.setTopologyID(city);
 					System.out.println(n.name);
 				}
+				city++;
 				System.out.println("---");
 			}
 			// end of tarjan
 			int queryAmount = in.nextInt();
 			InsertionList<Query> list = new InsertionList<Query>();
 			ArrayList<Query> piorityList = new ArrayList<>();
-			int im = 0, yes = 0, no = 0, im2=0;
+			int im = 0, yes = 0, no = 0, im2 = 0;
 			Scanner scan = new Scanner(new FileInputStream(out));
 			boolean flag1;
 			for (int i = 0; i < queryAmount; i++) {
@@ -57,23 +58,18 @@ public class Main {
 				Query q = new Query(start, end, i);
 				String ans = scan.next();
 				if (ans.equals("Impossible")) {
-					//System.out.println("Impo");
 					im2++;
 					flag1 = true;
 				}
 				boolean flag2 = q.checkTopology();
 				if (flag2) {
-					if (flag1) {
-						// System.out.println("YES");
+					im++;
+					if (flag1)
 						yes++;
-					} else {
-						// System.out.println("NO");
+					else
 						no++;
-					}
-					// System.out.println("L: " + i);
 				} else {
 					list.addElement(q);
-					im++;
 				}
 				piorityList.add(q);
 			}
@@ -81,7 +77,8 @@ public class Main {
 			System.out.println("NO: " + no);
 			System.out.println("IM in ans: " + im2);
 			System.out.println("IM in my: " + im);
-			// querys listed and sorted
+			// Query listed and sorted
+			scan.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found");
 		} catch (Exception e) {

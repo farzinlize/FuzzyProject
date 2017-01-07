@@ -19,7 +19,7 @@ public class Query implements Element {
 		if(answered){
 			throw new Exception("answered Query: " + piority);
 		}
-		if(start.getTopologyID()>end.getTopologyID()){
+		if(start.getTopologyID()<end.getTopologyID()){
 			this.makeAnswer(-1);
 			return true;	//no road
 		}
