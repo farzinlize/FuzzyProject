@@ -16,6 +16,9 @@ public class Query implements Element {
 	}
 	
 	public boolean checkTopology() throws Exception{
+		if(answered){
+			throw new Exception("answered Query: " + piority);
+		}
 		if(start.getTopologyID()>end.getTopologyID()){
 			this.makeAnswer(-1);
 			return true;	//no road
