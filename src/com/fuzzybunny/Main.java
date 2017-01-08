@@ -7,7 +7,6 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class Main {
 
@@ -20,7 +19,6 @@ public class Main {
 			Graph g = new Graph();
 			HashMap<String, Integer> nodeMap = new HashMap<>();
 			int vertexsAmount = in.nextInt();
-			Node[] nodeArray = new Node[vertexsAmount];
 			int edgesAmount = in.nextInt();
 			for (int i = 0; i < vertexsAmount; i++) {
 				String nodeName = in.next();
