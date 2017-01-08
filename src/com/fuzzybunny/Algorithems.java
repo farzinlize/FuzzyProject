@@ -1,6 +1,8 @@
 package com.fuzzybunny;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 public class Algorithems {
@@ -10,6 +12,14 @@ public class Algorithems {
 		return al.tarjan(g);
 	}
 
+	public static Map<Node, Integer> runDijkstra(Graph g, Node start){
+//		HashMap<Node, Integer> distances = new HashMap<>();
+//		for(Node v:g.allNodes())
+//			distances.put(v, Integer.MAX_VALUE);
+//		distances.put(start, 0);
+		return null;
+	}
+	
 	private class Strongconnect {
 		private Stack<Node> s;
 		private int index;
@@ -58,7 +68,7 @@ public class Algorithems {
 	public ArrayList<ArrayList<Node>> tarjan(Graph graph) {
 		int index = 0;
 		Strongconnect st = new Strongconnect(new Stack<>(), index);
-		for (Node v : graph.allVertex()) {
+		for (Node v : graph.allNodes()) {
 			if (!v.isDefined()) {
 				st.doIt(v);
 			}

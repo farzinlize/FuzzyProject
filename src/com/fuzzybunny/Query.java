@@ -26,9 +26,17 @@ public class Query implements Element {
 		return false;		//can't know
 	}
 	
+	public Node getStart(){
+		return start;
+	}
+	
 	@Override
 	public int getIntValue() {
 		return start.number;
+	}
+	
+	public int getEndCity() throws Exception{
+		return end.getTopologyID();
 	}
 	
 	public void makeAnswer(int ans){
