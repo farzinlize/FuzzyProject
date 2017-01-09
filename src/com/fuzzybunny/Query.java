@@ -39,6 +39,10 @@ public class Query implements Element {
 		return end.getTopologyID();
 	}
 	
+	public int getEndNumber(){
+		return end.number;
+	}
+	
 	public void makeAnswer(int ans){
 		answer = ans;
 		answered = true;

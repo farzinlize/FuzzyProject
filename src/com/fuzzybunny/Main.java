@@ -12,7 +12,7 @@ public class Main {
 
 	public static void main(String[] arg) {
 		Long time = System.currentTimeMillis();
-		File file = new File("DataSet\\XLarge-1\\input.txt");
+		File file = new File("DataSet\\Large-1\\input.txt");
 		try {
 			FileInputStream fin = new FileInputStream(file);
 			InputReader in = new InputReader(fin);
@@ -31,6 +31,7 @@ public class Main {
 				int edgeWeight = in.nextInt();
 				source.addEdge(dest, edgeWeight);
 			}
+			System.out.println("Read: " + (System.currentTimeMillis() - time));
 			// Tarjan Run and Answer
 			ArrayList<ArrayList<Node>> resultTarjan = Algorithems.runTarjan(g);
 			File out1 = new File("Answer\\output-1.txt");
@@ -48,6 +49,7 @@ public class Main {
 			}
 			writer.close();
 			// end of tarjan
+			System.out.println("Tarjan End: " + (System.currentTimeMillis() - time));
 			int queryAmount = in.nextInt();
 			InsertionList<Query> list = new InsertionList<Query>();
 			ArrayList<Query> piorityList = new ArrayList<>();
@@ -60,7 +62,10 @@ public class Main {
 				piorityList.add(q);
 			}
 			// Query listed and sorted
+			System.out.println("Query Read and sort: " + (System.currentTimeMillis() - time));
 			int notAnswered = list.size(), i = 0, j = 0, maxCity = Integer.MAX_VALUE;
+			int proccess = 0, check = notAnswered/100+1;
+			System.out.println("----------------------------------------------------------------------------------------------------");
 			while (i < notAnswered) {
 				Query startPoint = list.getElement(i);
 				maxCity = startPoint.getStart().getTopologyID();
@@ -75,17 +80,38 @@ public class Main {
 						break ;
 				}
 				ArrayList<Node> subGraphNodes = new ArrayList<>();
-				for (int k = startPoint.getStart().getTopologyID(); k > maxCity; k--) {
+				for (int k = startPoint.getStart().getTopologyID(); k >= maxCity; k--) {
 					ArrayList<Node> compo = resultTarjan.get(k);
 					subGraphNodes.addAll(compo);
 				}
-				Algorithems.runDijkstra(new Graph(subGraphNodes), startPoint.getStart());
+				int[] answer = Algorithems.runDijkstra(new Graph(subGraphNodes), startPoint.getStart());
+				for(int k=i;k<j;k++){
+					Query q = list.getElement(k);
+					q.makeAnswer(answer[q.getEndNumber()]);
+					proccess++;
+					if((proccess/check) > 1){
+						System.out.print("#");
+						proccess=0;
+					}
+				}
 				i=j;
 			}
+			System.out.println("");
+			File out2 = new File("Answer\\output-2.txt");
+			BufferedWriter writer2 = new BufferedWriter(new FileWriter(out2));
+			for(Query q:piorityList){
+				int toWrite = q.returnAnswer();
+				if(toWrite==-1)
+					writer2.write("Impossible" + "\n");
+				else
+					writer2.write(toWrite + "\n");
+			}
+			writer2.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found");
 		} catch (Exception e) {
 			System.out.println("Someting wrong :" + e.getMessage());
+			e.printStackTrace();
 		}
 		System.out.println("Time: " + (System.currentTimeMillis() - time));
 	}

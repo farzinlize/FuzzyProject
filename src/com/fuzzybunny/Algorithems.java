@@ -1,7 +1,6 @@
 package com.fuzzybunny;
 
 import java.util.ArrayList;
-import java.util.Map;
 import java.util.Stack;
 
 public class Algorithems {
@@ -11,12 +10,31 @@ public class Algorithems {
 		return al.tarjan(g);
 	}
 
-	public static Map<Node, Integer> runDijkstra(Graph g, Node start){
-//		HashMap<Node, Integer> distances = new HashMap<>();
-//		for(Node v:g.allNodes())
-//			distances.put(v, Integer.MAX_VALUE);
-//		distances.put(start, 0);
-		return null;
+	public static int[] runDijkstra(Graph g, Node start){
+		int[] dictances = new int[20000];
+		FibonacciHeap<Node> heap = new FibonacciHeap<>();
+		for(Node n:g.allNodes()){
+			dictances[n.number] = Integer.MAX_VALUE;
+			n.setColor(-1);									//color -1 means: not started
+		}
+		dictances[start.number] = 0;
+		heap.enqueue(start, dictances[start.number]);
+		start.setColor(0); 									//color 0 means: in heap
+		while(!heap.isEmpty()){
+			Node current = heap.dequeueMin().getValue();
+			current.setColor(1); 							//color 1 means: dequeued from heap
+			for(Edge edge:current.allEdges()){
+				Node neighbour = edge.destination;
+				if(neighbour.getColor()==1)
+					continue ;
+				int alt = dictances[current.number] + edge.weight;
+				if(alt < dictances[neighbour.number])
+					dictances[neighbour.number] = alt;
+				heap.enqueue(neighbour, dictances[neighbour.number]);
+				neighbour.setColor(0);
+			}
+		}
+		return dictances;
 	}
 	
 	private class Strongconnect {

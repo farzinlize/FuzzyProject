@@ -8,6 +8,7 @@ public class Node {
 	private boolean topologyed;
 	private int index;
   	private int lowlink;
+  	private int color;
   	private ArrayList<Edge> outEdges;
   	private int topologyID;
   	public String name;
@@ -19,6 +20,7 @@ public class Node {
   		this.topologyed = false;
   		this.index = 0;
   		this.lowlink =0;
+  		this.color = -1;
   		this.name = name;
   		this.outEdges = new ArrayList<>();
   		this.number = num;
@@ -35,7 +37,9 @@ public class Node {
   	public void addEdge(Node dest, int witgh){
   		this.outEdges.add(new Edge(this, dest, witgh));
   	}
-  	
+  	public ArrayList<Edge> allEdges(){
+  		return outEdges;
+  	}
   	public boolean isDefined(){
   		return this.defined;
   	}
@@ -69,5 +73,11 @@ public class Node {
   	}
   	public void setOnStack(boolean onStack) {
   		this.onStack = onStack;
+  	}
+  	public int getColor(){
+  		return this.color;
+  	}
+  	public void setColor(int c){
+  		this.color = c;
   	}
 }
