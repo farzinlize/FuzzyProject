@@ -12,16 +12,19 @@ public class Algorithems {
 
 	public static int[] runDijkstra(Graph g, Node start){
 		int[] dictances = new int[20000];
-		FibonacciHeap<Node> heap = new FibonacciHeap<>();
+		//FibonacciHeap<Node> heap = new FibonacciHeap<>();
+		FuzzyHeap<Node> heap = new FuzzyHeap<>(20000);
 		for(Node n:g.allNodes()){
 			dictances[n.number] = Integer.MAX_VALUE;
 			n.setColor(-1);									//color -1 means: not started
 		}
 		dictances[start.number] = 0;
-		heap.enqueue(start, dictances[start.number]);
+		//heap.enqueue(start, dictances[start.number]);
+		heap.addElement(start, dictances[start.number]);
 		start.setColor(0); 									//color 0 means: in heap
 		while(!heap.isEmpty()){
-			Node current = heap.dequeueMin().getValue();
+			//Node current = heap.dequeueMin().getValue();
+			Node current = heap.deleteMin();
 			if(current.getColor()==1)
 				continue ;
 			current.setColor(1); 							//color 1 means: dequeued from heap
@@ -32,7 +35,8 @@ public class Algorithems {
 				int alt = dictances[current.number] + edge.weight;
 				if(alt < dictances[neighbour.number])
 					dictances[neighbour.number] = alt;
-				heap.enqueue(neighbour, dictances[neighbour.number]);
+				//heap.enqueue(neighbour, dictances[neighbour.number]);
+				heap.addElement(neighbour, dictances[neighbour.number]);
 				neighbour.setColor(0);
 			}
 		}
