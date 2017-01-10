@@ -12,7 +12,7 @@ public class Main {
 
 	public static void main(String[] arg) {
 		Long time = System.currentTimeMillis();
-		File file = new File("DataSet\\Large-1\\input.txt");
+		File file = new File("DataSet\\XLarge-1\\input.txt");
 		try {
 			FileInputStream fin = new FileInputStream(file);
 			InputReader in = new InputReader(fin);
@@ -34,7 +34,7 @@ public class Main {
 			System.out.println("Read: " + (System.currentTimeMillis() - time));
 			// Tarjan Run and Answer
 			ArrayList<ArrayList<Node>> resultTarjan = Algorithems.runTarjan(g);
-			File out1 = new File("Answer\\output-1.txt");
+			File out1 = new File("Answer\\my_output-1.txt");
 			BufferedWriter writer = new BufferedWriter(new FileWriter(out1));
 			int city = 0;
 			for (ArrayList<Node> compo : resultTarjan) {
@@ -97,7 +97,7 @@ public class Main {
 				i=j;
 			}
 			System.out.println("");
-			File out2 = new File("Answer\\output-2.txt");
+			File out2 = new File("Answer\\my_output-2.txt");
 			BufferedWriter writer2 = new BufferedWriter(new FileWriter(out2));
 			for(Query q:piorityList){
 				int toWrite = q.returnAnswer();

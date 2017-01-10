@@ -22,6 +22,8 @@ public class Algorithems {
 		start.setColor(0); 									//color 0 means: in heap
 		while(!heap.isEmpty()){
 			Node current = heap.dequeueMin().getValue();
+			if(current.getColor()==1)
+				continue ;
 			current.setColor(1); 							//color 1 means: dequeued from heap
 			for(Edge edge:current.allEdges()){
 				Node neighbour = edge.destination;
