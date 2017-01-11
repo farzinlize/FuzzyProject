@@ -2,7 +2,7 @@ package com.fuzzybunny;
 
 import java.util.ArrayList;
 
-public class Node {
+public class Node implements Element{
 	private boolean onStack;
 	private boolean defined;
 	private boolean topologyed;
@@ -80,4 +80,9 @@ public class Node {
   	public void setColor(int c){
   		this.color = c;
   	}
+
+	@Override
+	public int getIntValue() {
+		return this.number;
+	}
 }

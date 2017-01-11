@@ -34,6 +34,7 @@ public class Main {
 			System.out.println("Read: " + (System.currentTimeMillis() - time));
 			// Tarjan Run and Answer
 			ArrayList<ArrayList<Node>> resultTarjan = Algorithems.runTarjan(g);
+			System.out.println("Tarjan End: " + (System.currentTimeMillis() - time));
 			File out1 = new File("Answer\\my_output-1.txt");
 			BufferedWriter writer = new BufferedWriter(new FileWriter(out1));
 			int city = 0;
@@ -41,15 +42,13 @@ public class Main {
 				for (Node n : compo) {
 					n.setTopologyID(city);
 					writer.write(n.name + "\n");
-					//System.out.println(n.name);
 				}
 				city++;
-				//System.out.println("---");
 				writer.write("---\n");
 			}
 			writer.close();
 			// end of tarjan
-			System.out.println("Tarjan End: " + (System.currentTimeMillis() - time));
+			System.out.println("Tarjan result write: " + (System.currentTimeMillis() - time));
 			int queryAmount = in.nextInt();
 			InsertionList<Query> list = new InsertionList<Query>();
 			ArrayList<Query> piorityList = new ArrayList<>();
@@ -65,7 +64,7 @@ public class Main {
 			System.out.println("Query Read and sort: " + (System.currentTimeMillis() - time));
 			int notAnswered = list.size(), i = 0, j = 0, maxCity = Integer.MAX_VALUE;
 			int proccess = 0, check = notAnswered/100+1;
-			System.out.println("----------------------------------------------------------------------------------------------------");
+			System.out.println("--------------------------------------------------");
 			while (i < notAnswered) {
 				Query startPoint = list.getElement(i);
 				maxCity = startPoint.getStart().getTopologyID();
@@ -97,6 +96,7 @@ public class Main {
 				i=j;
 			}
 			System.out.println("");
+			System.out.println("All dijkstra end: " + (System.currentTimeMillis() - time));
 			File out2 = new File("Answer\\my_output-2.txt");
 			BufferedWriter writer2 = new BufferedWriter(new FileWriter(out2));
 			for(Query q:piorityList){
@@ -107,6 +107,7 @@ public class Main {
 					writer2.write(toWrite + "\n");
 			}
 			writer2.close();
+			System.out.println("Dijkstra result write: " + (System.currentTimeMillis() - time));
 		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found");
 		} catch (Exception e) {
