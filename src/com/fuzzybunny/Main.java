@@ -52,51 +52,56 @@ public class Main {
 			// end of tarjan
 			System.out.println("Tarjan result write: " + (System.currentTimeMillis() - time));
 			int queryAmount = in.nextInt();
-			InsertionList<Query> list = new InsertionList<Query>();
+			//InsertionList<Query> list = new InsertionList<Query>();
+			FuzzyHeap<CityQuery> queryHeap = new FuzzyHeap<>(queryAmount+1);
+			FuzzyHeap<CityQuery> queryHeapReverce = new FuzzyHeap<>(queryAmount+1);
 			ArrayList<Query> piorityList = new ArrayList<>();
 			for (int i = 0; i < queryAmount; i++) {
 				Node start = g.findNode(nodeMap.get(in.next()));
 				Node end = g.findNode(nodeMap.get(in.next()));
 				Query q = new Query(start, end, i);
-				if (!q.checkTopology())
-					list.addElement(q);
+				if (!q.checkTopology()){
+					//queryHeap.addElement(new CityQuery(start, true), piority);
+					
+//					list.addElement(q);
+				}
 				piorityList.add(q);
 			}
 			// Query listed and sorted
-			System.out.println("Query Read and sort: " + (System.currentTimeMillis() - time));
-			int notAnswered = list.size(), i = 0, j = 0, maxCity = Integer.MAX_VALUE;
-			int proccess = 0, check = notAnswered/100+1;
-			System.out.println("--------------------------------------------------");
-			while (i < notAnswered) {
-				Query startPoint = list.getElement(i);
-				maxCity = startPoint.getStart().getTopologyID();
-				while (j < notAnswered) {
-					Query current = list.getElement(j);
-					if (current.getIntValue() == startPoint.getIntValue()) {
-						j++;
-						if (current.getEndCity() < maxCity)
-							maxCity = current.getEndCity();
-					}
-					else 
-						break ;
-				}
-				ArrayList<Node> subGraphNodes = new ArrayList<>();
-				for (int k = startPoint.getStart().getTopologyID(); k >= maxCity; k--) {
-					ArrayList<Node> compo = resultTarjan.get(k);
-					subGraphNodes.addAll(compo);
-				}
-				int[] answer = Algorithems.runDijkstra(new Graph(subGraphNodes), startPoint.getStart());
-				for(int k=i;k<j;k++){
-					Query q = list.getElement(k);
-					q.makeAnswer(answer[q.getEndNumber()]);
-					proccess++;
-					if((proccess/check) > 1){
-						System.out.print("#");
-						proccess=0;
-					}
-				}
-				i=j;
-			}
+//			System.out.println("Query Read and sort: " + (System.currentTimeMillis() - time));
+//			int notAnswered = list.size(), i = 0, j = 0, maxCity = Integer.MAX_VALUE;
+//			int proccess = 0, check = notAnswered/100+1;
+//			System.out.println("--------------------------------------------------");
+//			while (i < notAnswered) {
+//				Query startPoint = list.getElement(i);
+//				maxCity = startPoint.getStart().getTopologyID();
+//				while (j < notAnswered) {
+//					Query current = list.getElement(j);
+//					if (current.getIntValue() == startPoint.getIntValue()) {
+//						j++;
+//						if (current.getEndCity() < maxCity)
+//							maxCity = current.getEndCity();
+//					}
+//					else 
+//						break ;
+//				}
+//				ArrayList<Node> subGraphNodes = new ArrayList<>();
+//				for (int k = startPoint.getStart().getTopologyID(); k >= maxCity; k--) {
+//					ArrayList<Node> compo = resultTarjan.get(k);
+//					subGraphNodes.addAll(compo);
+//				}
+//				int[] answer = Algorithems.runDijkstra(new Graph(subGraphNodes), startPoint.getStart());
+//				for(int k=i;k<j;k++){
+//					Query q = list.getElement(k);
+//					q.makeAnswer(answer[q.getEndNumber()]);
+//					proccess++;
+//					if((proccess/check) > 1){
+//						System.out.print("#");
+//						proccess=0;
+//					}
+//				}
+//				i=j;
+//			}
 			System.out.println("");
 			System.out.println("All dijkstra end: " + (System.currentTimeMillis() - time));
 			File out2 = new File("Answer\\my_output-2.txt");
