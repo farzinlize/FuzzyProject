@@ -62,7 +62,8 @@ public class Algorithems {
 			s.push(v);
 			v.setOnStack(true);
 
-			for (Node w : v.allNeighbours()) {
+			for (Edge edge : v.allEdges()) {
+				Node w = edge.destination;
 				if (!w.isDefined()) {
 					doIt(w);
 					v.setLowlink(Math.min(v.getLowlink(), w.getLowlink()));
