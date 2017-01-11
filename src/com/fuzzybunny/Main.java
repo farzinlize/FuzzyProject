@@ -31,6 +31,7 @@ public class Main {
 				Node dest = g.findNode(nodeMap.get(in.next()));
 				int edgeWeight = in.nextInt();
 				source.addEdge(dest, edgeWeight);
+				dest.addReverceEdge(source, edgeWeight);
 			}
 			System.out.println("Read: " + (System.currentTimeMillis() - time));
 			// Tarjan Run and Answer
