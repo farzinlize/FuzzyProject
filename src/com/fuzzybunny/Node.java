@@ -10,6 +10,7 @@ public class Node implements Element{
   	private int lowlink;
   	private int color;
   	private ArrayList<Edge> outEdges;
+  	private ArrayList<Edge> reverceEdge;
   	private int topologyID;
   	public String name;
   	public int number;
@@ -23,6 +24,7 @@ public class Node implements Element{
   		this.color = -1;
   		this.name = name;
   		this.outEdges = new ArrayList<>();
+  		this.reverceEdge = new ArrayList<>();
   		this.number = num;
   	}
   	
@@ -39,6 +41,12 @@ public class Node implements Element{
   	}
   	public ArrayList<Edge> allEdges(){
   		return outEdges;
+  	}
+  	public void addReverceEdge(Node source, int witgh){
+  		this.reverceEdge.add(new Edge(source, this, witgh));
+  	}
+  	public ArrayList<Edge> allReverceEdges(){
+  		return this.reverceEdge;
   	}
   	public boolean isDefined(){
   		return this.defined;
