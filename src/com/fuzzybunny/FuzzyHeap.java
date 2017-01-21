@@ -33,7 +33,6 @@ public class FuzzyHeap<T extends Element> {
 			array[checkIndex].piority = piority;
 			bubbleUp(checkIndex);
 		}
-		
 		array[size++] = new Entry<T>(value, piority);
 		mark[array[size-1].value.getIntValue()] = size-1;
 		bubbleUp(size-1);
@@ -58,7 +57,7 @@ public class FuzzyHeap<T extends Element> {
 		Entry<T> min = array[1];
 		array[1] = array[(size--)-1];
 		
-		mark[array[1].value.getIntValue()] = 1; 
+		mark[array[1].value.getIntValue()] = 1;
 		
 		bubbleDown(1);
 		return min.value;
@@ -118,16 +117,5 @@ public class FuzzyHeap<T extends Element> {
 		return size-1;
 	}
 
-//	public static void main(String[] args){
-//		//FuzzyHeap<String> h = new FuzzyHeap<>(20);
-//		h.addElement("bye", 10);
-//		h.addElement("chetory", 3);
-//		h.addElement("lol", 4);
-//		h.addElement("sexy", 6);
-//		h.addElement("salam", 0);
-//		while(!h.isEmpty()){
-//			System.out.println(h.deleteMin());
-//		}
-//	}
 	
 }
