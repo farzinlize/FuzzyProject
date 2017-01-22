@@ -11,7 +11,6 @@ import java.util.HashMap;
 public class Main {
 
 	public static void main(String[] arg) {
-		//in Master
 		Long time = System.currentTimeMillis();
 		File file = new File("DataSet\\XLarge-1\\input.txt");
 		try {
