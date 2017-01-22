@@ -10,7 +10,7 @@ public class Algorithems {
 		return al.tarjan(g);
 	}
 
-	public static int[] runDijkstra(Graph g, Node start){
+	public static int[] runDijkstra(Graph g, Node start) throws Exception{
 		int[] dictances = new int[20000];
 		FuzzyHeap<Node> heap = new FuzzyHeap<>(20000);
 		for(Node n:g.allNodes()){
@@ -27,8 +27,8 @@ public class Algorithems {
 			current.setColor(1); 							//color 1 means: dequeued from heap
 			for(Edge edge:current.allEdges()){
 				Node neighbour = edge.destination;
-//				if(neighbour.getTopologyID()<g.lastCity)
-//					continue;
+				if(neighbour.getTopologyID()<g.lastCity)
+					continue;
 				if(neighbour.getColor()==1)
 					continue ;
 				int alt = dictances[current.number] + edge.weight;
