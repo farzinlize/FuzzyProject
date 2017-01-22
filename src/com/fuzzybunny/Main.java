@@ -34,6 +34,7 @@ public class Main {
 			System.out.println("Read: " + (System.currentTimeMillis() - time));
 			// Tarjan Run and Answer
 			ArrayList<ArrayList<Node>> resultTarjan = Algorithems.runTarjan(g);
+			//g.topologyed = true;
 			System.out.println("Tarjan End: " + (System.currentTimeMillis() - time));
 			File out1 = new File("Answer\\my_output-1.txt");
 			BufferedWriter writer = new BufferedWriter(new FileWriter(out1));
@@ -83,6 +84,8 @@ public class Main {
 					ArrayList<Node> compo = resultTarjan.get(k);
 					subGraphNodes.addAll(compo);
 				}
+				//Graph subGraph = new Graph(subGraphNodes);
+				//subGraph.setCitys(startPoint.getStart().getTopologyID(), maxCity);
 				int[] answer = Algorithems.runDijkstra(new Graph(subGraphNodes), startPoint.getStart());
 				for(int k=i;k<j;k++){
 					Query q = list.getElement(k);

@@ -27,6 +27,8 @@ public class Algorithems {
 			current.setColor(1); 							//color 1 means: dequeued from heap
 			for(Edge edge:current.allEdges()){
 				Node neighbour = edge.destination;
+//				if(neighbour.getTopologyID()<g.lastCity)
+//					continue;
 				if(neighbour.getColor()==1)
 					continue ;
 				int alt = dictances[current.number] + edge.weight;
